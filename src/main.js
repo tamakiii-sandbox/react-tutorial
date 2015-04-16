@@ -1,6 +1,10 @@
 var React = require('react');
 var CommentBox = require('./comment.jsx');
-React.render(
-  <CommentBox />,
+var data = [
+  {author: "Pete Hunt", text: "(tutorial 13) This is one comment"},
+  {author: "Jordan Walke", text: "(tutorial 13) This is *another* comment"}
+];
+React.renderComponent(
+  <CommentBox data={data} />,
   document.getElementById('content')
 );
