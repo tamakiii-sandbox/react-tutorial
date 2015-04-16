@@ -1,6 +1,6 @@
 var React = require('react');
 var CommentBox = require('./comment.jsx');
-React.renderComponent(
+React.render(
   <CommentBox />,
   document.getElementById('content')
 );
