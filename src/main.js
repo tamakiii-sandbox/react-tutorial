@@ -4,7 +4,7 @@ var data = [
   {author: "Pete Hunt", text: "(tutorial 13) This is one comment"},
   {author: "Jordan Walke", text: "(tutorial 13) This is *another* comment"}
 ];
-React.renderComponent(
+React.render(
   <CommentBox data={data} />,
   document.getElementById('content')
 );
